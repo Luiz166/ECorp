@@ -51,10 +51,11 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex m-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Type your search..."
+                    <form class="d-flex m-3" id="formSearch" role="search">
+                        <input class="form-control me-2" id="searchInput" type="search" placeholder=" "
                             aria-label="Search">
-                        <button class="btn btn-dark" type="submit">Search</button>
+                        <label id="searchLabel" for="searchInput">Search Here</label>
+                        <button class="btn btn-outline-light" type="submit">Search</button>
                     </form>
                     <a href="#" class="navbar-brand"><i class="fa-solid fa-user" style="color: white;"></i></a>
                 </div>
@@ -153,9 +154,9 @@
                             <!--Grid column-->
                             <div class="w-25">
                                 <!-- Email input -->
-                                <div class="form-outline form-white mb-4">
-                                    <input type="email" id="form5Example2" class="form-control" />
-                                    <label class="form-label" for="form5Example2">Email address</label>
+                                <div class="form-outline form-white mb-4" id="emailForm">
+                                    <input type="email" id="emailInput" placeholder=" " class="form-control" />
+                                    <label class="form-label" id="emailLabel" for="form5Example2">Email address</label>
                                 </div>
                             </div>
                             <!--Grid column-->

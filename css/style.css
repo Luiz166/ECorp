@@ -4,6 +4,37 @@
     font-family: montserrat;
 }
 
+:root{
+    --dark: #212529;
+}
+
+#formSearch{
+    position: relative;
+}
+
+#searchInput{
+    background-color: transparent;
+    color: white !important;
+}
+
+#searchLabel{
+    top: 20%;
+    left: 5%;
+    position: absolute;
+    background-color: var(--dark);
+    color: white;
+}
+
+#searchInput, #searchLabel{transition: all 0.2s ease-in-out;}
+
+#searchInput:placeholder-shown + #searchLabel{
+    top: 20%;
+}
+
+#searchInput:not(placeholder-shown) + #searchLabel, #searchInput:focus + #searchLabel{
+    top: -35%;
+}
+
 #navbarTitle{
     width: 100px;
     height: 100px;
@@ -25,4 +56,30 @@
 
 #copyrightSection{
     background-color: #16191b !important;
+}
+
+#emailForm{
+    position: relative;
+}
+
+#emailInput{background-color: transparent; color: white !important;}
+
+#emailLabel{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    background-color: var(--dark);
+}
+
+#emailInput, #emailLabel{
+    transition: all 0.2s ease-in-out;
+    touch-action: manipulation;
+}
+
+#emailInput:placeholder-shown + #emailLabel{
+    top: 20%;
+}
+
+#emailInput:not(placeholder-shown) + #emailLabel, #emailInput:focus + #emailLabel{
+    top: -35%;
 }
