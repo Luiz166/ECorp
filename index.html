@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>E Corp</title>
+</head>
+
+<body class="bg-dark">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="navbarTitle" href="#"><img src="images/logo.svg"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#productsRedirect">Products</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light bg-dark" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item" href="#">Cellphones</a></li>
+                                <li><a class="dropdown-item" href="#">Notebooks</a></li>
+                                <li><a class="dropdown-item" href="#">Furniture</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Gift-Cards</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex m-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Type your search..."
+                            aria-label="Search">
+                        <button class="btn btn-dark" type="submit">Search</button>
+                    </form>
+                    <a href="#" class="navbar-brand"><i class="fa-solid fa-user" style="color: white;"></i></a>
+                </div>
+            </div>
+        </nav>
+        <!--Carousel-->
+        <div id="carouselExampleAutoplaying" class="carousel slide mt-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/slide1.png" class="d-block w-100" alt="asdfasdf">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--Products-->
+        <h1 class="text-light mt-3" id="productsRedirect">Products</h1>
+        <div id="productsDiv" class="recentProducts d-flex justify-content-center p-2 mt-3">
+            <div class="card" style="width: 18rem;">
+                <img src="images/chair1.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Modern chair #1</h5>
+                    <p class="card-text">Modern chair style 1<br>R$2700</p>
+                    <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/chair2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Modern chair #2</h5>
+                    <p class="card-text">Modern chair style 2<br>R$1000</p>
+                    <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/chair3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Modern chair #3</h5>
+                    <p class="card-text">Modern chair style 3<br>R$1700</p>
+                    <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/chair4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Modern chair #4</h5>
+                    <p class="card-text">Modern chair style 4<br>R$1200</p>
+                    <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div id="footer" class="mt-5">
+            <section id="socialMedia" class="bg-dark p-2 d-flex justify-content-center">
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <section class="p-4 pb-0 bg-dark">
+                <!-- Section: Form -->
+                <section class="text-white">
+                    <form action="">
+                        <!--Grid row-->
+                        <div class="d-flex justify-content-center gap-4">
+                            <!--Grid column-->
+                            <div class="">
+                                <p class="pt-2">
+                                    <strong>Sign up for our newsletter</strong>
+                                </p>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="w-25">
+                                <!-- Email input -->
+                                <div class="form-outline form-white mb-4">
+                                    <input type="email" id="form5Example2" class="form-control" />
+                                    <label class="form-label" for="form5Example2">Email address</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="">
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-outline-light mb-4">
+                                    Subscribe
+                                </button>
+                            </div>
+                            <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                    </form>
+                </section>
+                <!-- Section: Form -->
+            </section>
+            <!-- Section: Left aligned -->
+        </div>
+        <section id="text" class="d-flex text-center">
+            <p class="text-light">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, debitis quaerat nam qui commodi id
+                vel mollitia repudiandae temporibus quidem! Alias saepe maxime officiis debitis dignissimos asperiores
+                suscipit doloribus est.
+            </p>
+        </section>
+        <section id="links">
+            <div class="row text-center">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-light">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-light">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-light">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-light">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-light">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-light">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-light">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-light">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+        </section>
+        <!-- Copyright -->
+        <div class="text-center text-light p-3" id="copyrightSection">
+            © 2023 Copyright: E Corp
+        </div>
+        <!-- Copyright -->
+    </div>
+    </div>
+</body>
+<script src="$('.carousel').carousel()"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+</html>
