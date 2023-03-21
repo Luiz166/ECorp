@@ -33,3 +33,7 @@
 #emailInput:not(placeholder-shown) + #emailLabel, #emailInput:focus + #emailLabel{
     top: -35%;
 }
+
+.carousel{
+    margin-top: 8rem !important;
+}
