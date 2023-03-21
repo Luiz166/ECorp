@@ -1,0 +1,41 @@
+#formSearch{
+    position: relative;
+}
+
+#searchInput{
+    background-color: transparent;
+    color: white !important;
+}
+
+#searchLabel{
+    top: 20%;
+    left: 5%;
+    position: absolute;
+    background-color: var(--dark);
+    color: white;
+}
+
+#searchInput, #searchLabel{transition: all 0.2s ease-in-out;}
+
+#searchInput:placeholder-shown + #searchLabel{
+    top: 20%;
+}
+
+#searchInput:not(placeholder-shown) + #searchLabel, #searchInput:focus + #searchLabel{
+    top: -35%;
+}
+
+#navbarTitle{
+    width: 100px;
+    height: 100px;
+}
+#navbarTitle img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown-item{
+    color: white;
+}
