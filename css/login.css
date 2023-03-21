@@ -32,13 +32,9 @@ form{
     color: white;
 }
 
-#pswdDiv{
-    position: relative;
-}
-
 #floatingSpan{
     position: absolute;
-    top: 55%;
+    top: 15%;
     right: 2%;
     background-color: transparent;
     border: none;
