@@ -18,9 +18,9 @@
     <title>E Corp</title>
 </head>
 
-<body class="bg-dark">
-    <div class="container">
-        <nav class="navbar fixed-top navbar-expand-lg bg-dark">
+<body id="home" class="bg-dark">
+    <div class="container" data-bs-spy="scroll"data-bs-target="#navbar">
+        <nav id="navbar" class="navbar fixed-top navbar-expand-lg bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" id="navbarTitle" href="#"><img src="images/logo.svg"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -31,7 +31,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-light" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="#productsRedirect">Products</a>
@@ -81,7 +81,7 @@
             </button>
         </div>
         <!--Products-->
-        <h1 class="text-light mt-3" id="productsRedirect">Products</h1>
+        <h1 tabindex="0" class="text-light mt-3" id="productsRedirect">Products</h1>
         <div id="productsDiv" class="recentProducts d-flex justify-content-center p-2 mt-3">
             <div class="card" style="width: 18rem;">
                 <img src="images/chair1.jpg" class="card-img-top">

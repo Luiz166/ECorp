@@ -37,3 +37,8 @@
 .carousel{
     margin-top: 8rem !important;
 }
+
+.active{
+    border-radius: 10px;
+    background-color: #16191b !important;
+}
